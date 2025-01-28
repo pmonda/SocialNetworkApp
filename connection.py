@@ -1,6 +1,7 @@
 class Connection:
-  def __init__(self, from, to):
-    pass
+  def __init__(self, fromUser, toUser):
+    self.fromUser = fromUser
+    self.toUser = toUser
     
-  def friendReq(self, from, to):
-    print(f"{from} has requested to be friends with {to}")
+  def friendReq(self, fromUser, toUser):
+    print(f"{fromUser} has requested to be friends with {toUser}")
